@@ -68,11 +68,11 @@
 
 | # | ชื่อผลิตภัณฑ์ | กำลังผลิต | หน่วย | ชม/วัน | วัน/ปี |
 |---|-------------|-----------|------|--------|--------|
-| **1** | **Physical AI Agent (Aslan Mascot)** | 1 | System | 24 | 365 |
-| 2 | Thai Natural Language Processing (NLP) Engine | 1 | Model | 24 | 365 |
-| 3 | Multi-Agent AI Platform | 1 | Platform | 24 | 365 |
-| 4 | Explainable AI (XAI) Module | 1 | Module | 24 | 365 |
-| 5 | Mobile Application | 1 | App | 24 | 365 |
+| **1** | **Physical AI Agent (Aslan Mascot)** | 10,000 | Units | 24 | 365 |
+| 2 | Thai Natural Language Processing (NLP) Engine | 100,000 | Requests/day | 24 | 365 |
+| 3 | Multi-Agent AI Platform | 50,000 | Concurrent Users | 24 | 365 |
+| 4 | Explainable AI (XAI) Module | 100,000 | Analyses/day | 24 | 365 |
+| 5 | Mobile Application | 100,000 | Active Users | 24 | 365 |
 
 **⭐ หมายเหตุสำคัญ:**
 - **Product #1 "Physical AI Agent"** คือ ตุ๊กตา/หุ่นยนต์ AI รูปสิงโต "Aslan" ที่มี Speaker, Microphone, LED, IoT sensors ในตัว

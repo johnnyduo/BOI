@@ -43,13 +43,13 @@
 
 ### PAGE 3: PRODUCTS/SERVICES (5 PRODUCTS) ✅
 
-| # | Product Name | Units/Year | Hours/Day | Days/Year | Status |
-|---|--------------|------------|-----------|-----------|--------|
-| **1** | **Physical AI Agent (Aslan Mascot)** | 1 System | 24 | 365 | ✅ |
-| **2** | Multi-Agent AI Platform (5 Agents) | 1 System | 24 | 365 | ✅ |
-| **3** | Mobile Application (iOS/Android) | 1 System | 24 | 365 | ✅ |
-| **4** | XAI Framework for Transparency | 1 System | 24 | 365 | ✅ |
-| **5** | Thai NLP Engine for Finance | 1 System | 24 | 365 | ✅ |
+| # | Product Name | Capacity | Units | Hours/Day | Days/Year | Status |
+|---|--------------|----------|-------|-----------|-----------|--------|
+| **1** | **Physical AI Agent (Aslan Mascot)** | 10,000 | Units | 24 | 365 | ✅ |
+| **2** | Multi-Agent AI Platform (5 Agents) | 50,000 | Concurrent Users | 24 | 365 | ✅ |
+| **3** | Mobile Application (iOS/Android) | 100,000 | Active Users | 24 | 365 | ✅ |
+| **4** | XAI Framework for Transparency | 100,000 | Analyses/day | 24 | 365 | ✅ |
+| **5** | Thai NLP Engine for Finance | 100,000 | Requests/day | 24 | 365 | ✅ |
 
 **Source Files:** README.md, BOI_SUBMISSION_COMPLETE.md
 

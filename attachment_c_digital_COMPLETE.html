@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มส่งเสริมการลงทุน - เอกสารแนบ C (เทคโนโลยีดิจิทัล)</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        body {
+            font-family: 'Sarabun', 'TH Sarabun New', sans-serif;
+            font-size: 14pt;
+            line-height: 1.6;
+            color: #000;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 1cm;
+        }
+        h1 {
+            text-align: center;
+            font-size: 18pt;
+            font-weight: bold;
+            margin-bottom: 1.5cm;
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 1cm;
+            margin-bottom: 0.5cm;
+            background-color: #f0f0f0;
+            padding: 0.3cm;
+        }
+        h3 {
+            font-size: 15pt;
+            font-weight: bold;
+            margin-top: 0.8cm;
+            margin-bottom: 0.4cm;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.5cm 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 0.3cm;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 1cm;
+        }
+        .highlight {
+            background-color: #87CEEB;
+            padding: 0.2cm;
+            font-weight: bold;
+        }
+        .company-info {
+            margin-bottom: 1cm;
+        }
+        ul {
+            margin: 0.3cm 0;
+            padding-left: 1.5cm;
+        }
+        li {
+            margin: 0.2cm 0;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #f5f5f5;
+        }
+        @media print {
+            body {
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>เอกสารแนบ C<br>รายละเอียดการใช้เทคโนโลยีดิจิทัล</h1>
+
+<div class="company-info">
+    <p><strong>ชื่อโครงการ:</strong> ASLAN AI GUARDIAN PLATFORM</p>
+    <p><strong>บริษัท:</strong> บริษัท อัสลาน เวลธ์ จำกัด (ASLAN WEALTH COMPANY LIMITED)</p>
+    <p><strong>เลขทะเบียน:</strong> 0105567220030</p>
+    <p><strong>งบประมาณเทคโนโลยีดิจิทัล:</strong> <span class="highlight">26,000,000 บาท</span></p>
+</div>
+
+<!-- ส่วนที่ 1: วัตถุประสงค์การใช้เทคโนโลยีดิจิทัล -->
+<div class="section">
+    <h2>ส่วนที่ 1: วัตถุประสงค์การใช้เทคโนโลยีดิจิทัล</h2>
+
+    <h3>1.1 วัตถุประสงค์หลัก</h3>
+    <p>โครงการลงทุนในเทคโนโลยีดิจิทัลเพื่อสนับสนุนการพัฒนาและให้บริการระบบ ASLAN AI GUARDIAN PLATFORM ดังนี้:</p>
+
+    <ol>
+        <li><strong>สร้าง Cloud Infrastructure ที่ปลอดภัยและ Scalable</strong>
+            <ul>
+                <li>Deploy บน Cloud Platform (AWS/Google Cloud/Azure) สำหรับรองรับผู้ใช้จำนวนมาก</li>
+                <li>Auto-scaling สำหรับรองรับ Peak load (50,000 concurrent users)</li>
+                <li>High Availability (HA) และ Disaster Recovery (DR)</li>
+                <li>CDN สำหรับเร่งความเร็วในการเข้าถึง</li>
+            </ul>
+        </li>
+
+        <li><strong>สร้างระบบ On-premise Hardware สำหรับ Critical Operations</strong>
+            <ul>
+                <li>Production Servers สำหรับ Mission-critical services</li>
+                <li>Database Servers สำหรับเก็บข้อมูลผู้ใช้</li>
+                <li>Kubernetes Cluster สำหรับ Container orchestration</li>
+                <li>Network infrastructure (Firewalls, Load balancers, Switches)</li>
+            </ul>
+        </li>
+
+        <li><strong>จัดหาซอฟต์แวร์และเครื่องมือสำหรับการพัฒนา</strong>
+            <ul>
+                <li>Development Tools และ IDEs</li>
+                <li>Database Licenses (Enterprise edition)</li>
+                <li>Monitoring และ Analytics tools</li>
+                <li>Project Management และ Collaboration platforms</li>
+            </ul>
+        </li>
+
+        <li><strong>สร้างระบบรักษาความปลอดภัย (Security & Compliance)</strong>
+            <ul>
+                <li>Firewall และ Intrusion Detection/Prevention Systems (IDS/IPS)</li>
+                <li>Data Encryption (at rest และ in transit)</li>
+                <li>Identity และ Access Management (IAM)</li>
+                <li>Security Auditing และ Compliance tools</li>
+            </ul>
+        </li>
+
+        <li><strong>พัฒนาระบบ Integration และ APIs</strong>
+            <ul>
+                <li>API Gateway สำหรับเชื่อมต่อกับ Banking Systems</li>
+                <li>Message Queue systems (Kafka, RabbitMQ)</li>
+                <li>Integration middleware</li>
+                <li>DevOps tools สำหรับ CI/CD pipeline</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>1.2 ผลที่คาดว่าจะได้รับ</h3>
+    <ul>
+        <li>Cloud Infrastructure ที่รองรับ 100,000+ requests/day</li>
+        <li>System Uptime ≥ 99.5% (SLA)</li>
+        <li>Response Time < 200ms สำหรับ API calls</li>
+        <li>ผ่าน Security Audit และได้รับใบรับรองจาก depa</li>
+        <li>ระบบ Backup และ Disaster Recovery ที่ครบถ้วน</li>
+        <li>ระบบ Monitoring แบบ Real-time สำหรับตรวจสอบ Performance</li>
+    </ul>
+</div>
+
+<!-- ส่วนที่ 2: รายละเอียดเทคโนโลยีดิจิทัล (5 หมวดหมู่) -->
+<div class="section">
+    <h2>ส่วนที่ 2: รายละเอียดเทคโนโลยีดิจิทัล (5 หมวดหมู่)</h2>
+
+    <h3>หมวดที่ 1: Cloud Services & Infrastructure (5,000,000 บาท)</h3>
+    <p><strong>รายละเอียด:</strong></p>
+    <ul>
+        <li><strong>Cloud Platform Subscription (AWS/GCP/Azure):</strong>
+            <ul>
+                <li>Compute Instances (EC2, Compute Engine) สำหรับ Application Servers</li>
+                <li>Managed Database Services (RDS, Cloud SQL)</li>
+                <li>Object Storage (S3, Cloud Storage) สำหรับ Files และ Backups</li>
+                <li>CDN Services สำหรับเร่งความเร็ว</li>
+            </ul>
+        </li>
+        <li><strong>AI/ML Services:</strong>
+            <ul>
+                <li>GPU Instances สำหรับ Model inference</li>
+                <li>Managed AI/ML platforms</li>
+                <li>Data Pipeline services</li>
+            </ul>
+        </li>
+        <li><strong>Monitoring & Analytics:</strong>
+            <ul>
+                <li>CloudWatch, Stackdriver</li>
+                <li>Application Performance Monitoring (APM)</li>
+                <li>Log Analytics</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>ระยะเวลา:</strong> 12 เดือน (Subscription)</p>
+    <p><strong>เป้าหมาย:</strong> รองรับ 100,000+ requests/day, Auto-scaling</p>
+
+    <h3>หมวดที่ 2: On-premise Hardware & Servers (8,000,000 บาท)</h3>
+    <p><strong>รายละเอียด:</strong></p>
+    <ul>
+        <li><strong>Production Servers:</strong>
+            <ul>
+                <li>Application Servers (High-performance) x 4 เครื่อง</li>
+                <li>Database Servers (Enterprise-grade) x 2 เครื่อง</li>
+                <li>Backup Servers x 2 เครื่อง</li>
+            </ul>
+        </li>
+        <li><strong>Kubernetes Cluster:</strong>
+            <ul>
+                <li>Master Nodes x 3 เครื่อง</li>
+                <li>Worker Nodes x 10 เครื่อง</li>
+            </ul>
+        </li>
+        <li><strong>Network Equipment:</strong>
+            <ul>
+                <li>Enterprise Firewall x 2 ชุด (HA)</li>
+                <li>Load Balancer x 2 ชุด</li>
+                <li>Core Switch x 4 ตัว</li>
+                <li>UPS และ Power Management</li>
+            </ul>
+        </li>
+        <li><strong>Storage Systems:</strong>
+            <ul>
+                <li>SAN/NAS Storage (Enterprise) ≥ 100TB</li>
+                <li>Backup Storage ≥ 200TB</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>เป้าหมาย:</strong> Uptime ≥ 99.5%, High Availability</p>
+
+    <h3>หมวดที่ 3: Software Licenses & Development Tools (3,000,000 บาท)</h3>
+    <p><strong>รายละเอียด:</strong></p>
+    <ul>
+        <li><strong>Database Licenses:</strong>
+            <ul>
+                <li>PostgreSQL Enterprise (Support)</li>
+                <li>MongoDB Enterprise</li>
+                <li>Redis Enterprise</li>
+            </ul>
+        </li>
+        <li><strong>Development Tools:</strong>
+            <ul>
+                <li>JetBrains Suite (IntelliJ, PyCharm, etc.) x 15 licenses</li>
+                <li>Visual Studio Enterprise x 15 licenses</li>
+                <li>GitHub Enterprise (for code repository)</li>
+            </ul>
+        </li>
+        <li><strong>Monitoring & Analytics:</strong>
+            <ul>
+                <li>Datadog/New Relic (APM)</li>
+                <li>Splunk/ELK Stack (Log management)</li>
+                <li>Grafana/Prometheus</li>
+            </ul>
+        </li>
+        <li><strong>Project Management:</strong>
+            <ul>
+                <li>Jira Software (Project tracking)</li>
+                <li>Confluence (Documentation)</li>
+                <li>Slack Enterprise (Communication)</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>ระยะเวลา:</strong> 12 เดือน (Annual licenses)</p>
+
+    <h3>หมวดที่ 4: Security & Compliance Systems (2,000,000 บาท)</h3>
+    <p><strong>รายละเอียด:</strong></p>
+    <ul>
+        <li><strong>Security Hardware:</strong>
+            <ul>
+                <li>Next-Gen Firewall (Palo Alto/Fortinet)</li>
+                <li>IDS/IPS Systems</li>
+                <li>Web Application Firewall (WAF)</li>
+            </ul>
+        </li>
+        <li><strong>Security Software:</strong>
+            <ul>
+                <li>Endpoint Protection (Antivirus, Anti-malware)</li>
+                <li>SIEM (Security Information and Event Management)</li>
+                <li>Vulnerability Scanner</li>
+                <li>Penetration Testing Tools</li>
+            </ul>
+        </li>
+        <li><strong>Data Protection:</strong>
+            <ul>
+                <li>Encryption Software (TLS, AES-256)</li>
+                <li>Data Loss Prevention (DLP)</li>
+                <li>Backup and Recovery solutions</li>
+            </ul>
+        </li>
+        <li><strong>Compliance Tools:</strong>
+            <ul>
+                <li>Audit logging systems</li>
+                <li>Compliance monitoring tools</li>
+                <li>Security certification preparation</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>เป้าหมาย:</strong> ผ่าน Security Audit, รับใบรับรองจาก depa</p>
+
+    <h3>หมวดที่ 5: System Integration & API Development (8,000,000 บาท)</h3>
+    <p><strong>รายละเอียด:</strong></p>
+    <ul>
+        <li><strong>API Gateway & Management:</strong>
+            <ul>
+                <li>Kong/Apigee API Gateway</li>
+                <li>API Management platform</li>
+                <li>Rate limiting และ Throttling</li>
+            </ul>
+        </li>
+        <li><strong>Message Queue & Streaming:</strong>
+            <ul>
+                <li>Apache Kafka Cluster</li>
+                <li>RabbitMQ for messaging</li>
+                <li>Event streaming infrastructure</li>
+            </ul>
+        </li>
+        <li><strong>Integration Middleware:</strong>
+            <ul>
+                <li>ESB (Enterprise Service Bus)</li>
+                <li>ETL Tools สำหรับ Data transformation</li>
+                <li>Banking API Integration modules</li>
+            </ul>
+        </li>
+        <li><strong>DevOps & CI/CD:</strong>
+            <ul>
+                <li>Jenkins/GitLab CI pipelines</li>
+                <li>Docker Registry</li>
+                <li>Kubernetes (K8s) management tools</li>
+                <li>Terraform for Infrastructure as Code</li>
+            </ul>
+        </li>
+        <li><strong>Professional Services:</strong>
+            <ul>
+                <li>System Integration consulting</li>
+                <li>Technical support และ Maintenance</li>
+                <li>Training สำหรับทีมพัฒนา</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>เป้าหมาย:</strong> API Response Time < 200ms, Throughput ≥ 500 TPS</p>
+</div>
+
+<!-- ส่วนที่ 3: สรุปงบประมาณเทคโนโลยีดิจิทัล -->
+<div class="section">
+    <h2>ส่วนที่ 3: สรุปงบประมาณเทคโนโลยีดิจิทัล</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">#</th>
+                <th style="width: 50%;">หมวดหมู่</th>
+                <th style="width: 20%;">งบประมาณ (บาท)</th>
+                <th style="width: 15%;">% ของ Digital</th>
+                <th style="width: 10%;">อ้างอิง AOR3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td>Cloud Services & Infrastructure</td>
+                <td style="text-align: right;">5,000,000</td>
+                <td style="text-align: center;">19.2%</td>
+                <td style="text-align: center;">หน้า 6 ข้อ 1</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td>On-premise Hardware & Servers</td>
+                <td style="text-align: right;">8,000,000</td>
+                <td style="text-align: center;">30.8%</td>
+                <td style="text-align: center;">หน้า 6 ข้อ 2</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td>Software Licenses & Development Tools</td>
+                <td style="text-align: right;">3,000,000</td>
+                <td style="text-align: center;">11.5%</td>
+                <td style="text-align: center;">หน้า 6 ข้อ 3</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td>Security & Compliance Systems</td>
+                <td style="text-align: right;">2,000,000</td>
+                <td style="text-align: center;">7.7%</td>
+                <td style="text-align: center;">หน้า 6 ข้อ 4</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td>System Integration & API Development</td>
+                <td style="text-align: right;">8,000,000</td>
+                <td style="text-align: center;">30.8%</td>
+                <td style="text-align: center;">หน้า 6 ข้อ 5</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="2" style="text-align: right;"><strong>รวมทั้งสิ้น</strong></td>
+                <td style="text-align: right;"><strong>26,000,000</strong></td>
+                <td style="text-align: center;"><strong>100.0%</strong></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top: 1cm;"><strong>หมายเหตุ:</strong> ค่าใช้จ่ายทั้งหมดสอดคล้องกับ AOR3/2568 หน้า 6 (รายการค่าใช้จ่ายที่ได้รับการสนับสนุนสำหรับเทคโนโลยีดิจิทัล)</p>
+</div>
+
+<!-- ส่วนที่ 4: รายการ Hardware หลัก -->
+<div class="section">
+    <h2>ส่วนที่ 4: รายการ Hardware และ Infrastructure หลัก</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">#</th>
+                <th style="width: 45%;">รายการ</th>
+                <th style="width: 15%;">จำนวน</th>
+                <th style="width: 17%;">มูลค่า/หน่วย (บาท)</th>
+                <th style="width: 18%;">รวม (บาท)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td>Application Server (High-performance, Dual Xeon, 256GB RAM)</td>
+                <td style="text-align: center;">4</td>
+                <td style="text-align: right;">500,000</td>
+                <td style="text-align: right;">2,000,000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td>Database Server (Enterprise-grade, 512GB RAM, NVMe Storage)</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: right;">800,000</td>
+                <td style="text-align: right;">1,600,000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td>Kubernetes Nodes (Master: 3, Worker: 10)</td>
+                <td style="text-align: center;">13</td>
+                <td style="text-align: right;">150,000</td>
+                <td style="text-align: right;">1,950,000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td>Next-Gen Firewall (Palo Alto PA-3260 or equivalent)</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: right;">600,000</td>
+                <td style="text-align: right;">1,200,000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td>Load Balancer (F5 or equivalent)</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: right;">400,000</td>
+                <td style="text-align: right;">800,000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">6</td>
+                <td>Enterprise Storage (SAN, 100TB usable)</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">1,500,000</td>
+                <td style="text-align: right;">1,500,000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7</td>
+                <td>Network Switches (Core, 10Gb)</td>
+                <td style="text-align: center;">4</td>
+                <td style="text-align: right;">150,000</td>
+                <td style="text-align: right;">600,000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">8</td>
+                <td>UPS & Power Management (Redundant)</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: right;">300,000</td>
+                <td style="text-align: right;">600,000</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="4" style="text-align: right;"><strong>รวมทั้งสิ้น (ประมาณการหลัก)</strong></td>
+                <td style="text-align: right;"><strong>10,250,000</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><em>หมายเหตุ: รายการข้างต้นเป็นส่วนหลัก ยังมี Hardware เสริมและอุปกรณ์เครือข่ายเพิ่มเติม</em></p>
+</div>
+
+<!-- ส่วนที่ 5: Architecture Diagram (Text Description) -->
+<div class="section">
+    <h2>ส่วนที่ 5: สถาปัตยกรรมระบบ (System Architecture)</h2>
+
+    <h3>5.1 Infrastructure Layers</h3>
+    <ol>
+        <li><strong>Presentation Layer (Frontend)</strong>
+            <ul>
+                <li>Mobile Apps (iOS/Android) - Flutter/React Native</li>
+                <li>Physical AI Agent Interface - Embedded Linux</li>
+                <li>Web Dashboard - React.js</li>
+                <li>CDN - CloudFront/Cloud CDN</li>
+            </ul>
+        </li>
+
+        <li><strong>API Gateway Layer</strong>
+            <ul>
+                <li>Kong/Apigee API Gateway</li>
+                <li>Rate Limiting & Throttling</li>
+                <li>Authentication & Authorization (OAuth 2.0, JWT)</li>
+                <li>SSL/TLS Termination</li>
+            </ul>
+        </li>
+
+        <li><strong>Application Layer (Backend Services)</strong>
+            <ul>
+                <li>5 AI Agents (Microservices)</li>
+                <li>Thai NLP Service</li>
+                <li>XAI Service</li>
+                <li>Fraud Detection Service</li>
+                <li>User Management Service</li>
+                <li>Notification Service</li>
+            </ul>
+        </li>
+
+        <li><strong>Data Layer</strong>
+            <ul>
+                <li>PostgreSQL (Primary Database)</li>
+                <li>MongoDB (Document Store)</li>
+                <li>Redis (Cache & Session)</li>
+                <li>Elasticsearch (Search & Analytics)</li>
+                <li>Kafka (Event Streaming)</li>
+            </ul>
+        </li>
+
+        <li><strong>Infrastructure Layer</strong>
+            <ul>
+                <li>Kubernetes Cluster (Container Orchestration)</li>
+                <li>Cloud Services (AWS/GCP/Azure)</li>
+                <li>On-premise Servers (Hybrid)</li>
+                <li>Monitoring (Prometheus, Grafana, Datadog)</li>
+                <li>Logging (ELK Stack)</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>5.2 Security Layers</h3>
+    <ul>
+        <li>Network Security: Firewall, IDS/IPS, WAF</li>
+        <li>Application Security: Input validation, XSS/CSRF protection</li>
+        <li>Data Security: Encryption at rest (AES-256), in transit (TLS 1.3)</li>
+        <li>Access Control: RBAC, MFA</li>
+        <li>Audit & Compliance: SIEM, Log management</li>
+    </ul>
+</div>
+
+<!-- ส่วนที่ 6: Performance & Scalability Targets -->
+<div class="section">
+    <h2>ส่วนที่ 6: เป้าหมาย Performance และ Scalability</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 40%;">Metric</th>
+                <th style="width: 30%;">เป้าหมาย</th>
+                <th style="width: 30%;">วิธีการวัด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>System Uptime</td>
+                <td style="text-align: center;">≥ 99.5%</td>
+                <td>Monitoring tools (24/7)</td>
+            </tr>
+            <tr>
+                <td>API Response Time</td>
+                <td style="text-align: center;">< 200ms (p95)</td>
+                <td>APM (Datadog/New Relic)</td>
+            </tr>
+            <tr>
+                <td>Concurrent Users</td>
+                <td style="text-align: center;">50,000 users</td>
+                <td>Load testing (JMeter/Gatling)</td>
+            </tr>
+            <tr>
+                <td>Throughput</td>
+                <td style="text-align: center;">≥ 500 TPS</td>
+                <td>Performance monitoring</td>
+            </tr>
+            <tr>
+                <td>Database Queries</td>
+                <td style="text-align: center;">< 50ms (avg)</td>
+                <td>Database profiling</td>
+            </tr>
+            <tr>
+                <td>Security Scans</td>
+                <td style="text-align: center;">Weekly</td>
+                <td>Vulnerability scanner</td>
+            </tr>
+            <tr>
+                <td>Backup Frequency</td>
+                <td style="text-align: center;">Daily (Full), Hourly (Incremental)</td>
+                <td>Backup monitoring</td>
+            </tr>
+            <tr>
+                <td>Recovery Time Objective (RTO)</td>
+                <td style="text-align: center;">< 4 hours</td>
+                <td>DR testing (quarterly)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ส่วนที่ 7: Timeline -->
+<div class="section">
+    <h2>ส่วนที่ 7: Timeline การติดตั้งและ Deployment</h2>
+
+    <h3>งวดที่ 1: เดือน 1-6 (1 มิ.ย. 2569 - 30 พ.ย. 2569)</h3>
+    <p><strong>เงินสนับสนุน:</strong> 6,500,000 บาท (50% ของ Digital Support 13M)</p>
+    <p><strong>กิจกรรม:</strong></p>
+    <ul>
+        <li>จัดซื้อและติดตั้ง On-premise Hardware (50%)</li>
+        <li>ตั้งค่า Cloud Infrastructure</li>
+        <li>ติดตั้ง Basic Security systems</li>
+        <li>Setup Development environment</li>
+        <li>Deploy Beta version</li>
+    </ul>
+
+    <h3>งวดที่ 2: เดือน 7-12 (1 ธ.ค. 2569 - 31 พ.ค. 2570)</h3>
+    <p><strong>เงินสนับสนุน:</strong> 6,500,000 บาท (50% ของ Digital Support 13M)</p>
+    <p><strong>กิจกรรม:</strong></p>
+    <ul>
+        <li>จัดซื้อและติดตั้ง Hardware ที่เหลือ</li>
+        <li>Complete Production deployment</li>
+        <li>Full Security implementation</li>
+        <li>Integration testing</li>
+        <li>Performance tuning</li>
+        <li>ผ่าน Security Audit และได้รับใบรับรองจาก depa</li>
+        <li>Go Live บริการจริง</li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<div class="section" style="margin-top: 2cm; border-top: 2px solid #000; padding-top: 0.5cm;">
+    <p><strong>ลงชื่อ:</strong> ________________________________</p>
+    <p><strong>นายสุรเกียรติ ยาวะโนภาส</strong></p>
+    <p>กรรมการผู้จัดการ</p>
+    <p>บริษัท อัสลาน เวลธ์ จำกัด</p>
+    <p><strong>วันที่:</strong> ________________</p>
+</div>
+
+<div class="no-print" style="margin-top: 2cm; padding: 1cm; background-color: #ffffcc; border: 2px solid #ff9900;">
+    <h3>คำแนะนำในการพิมพ์:</h3>
+    <ul>
+        <li>ใช้ Print to PDF จากเบราว์เซอร์</li>
+        <li>ตั้งค่า: A4, Portrait, Margins: Normal</li>
+        <li>เปิดใช้ Background graphics เพื่อให้เห็นสีตาราง</li>
+        <li>ตรวจสอบว่าทุกหน้าพิมพ์ครบถ้วน</li>
+    </ul>
+</div>
+
+</body>
+</html>
