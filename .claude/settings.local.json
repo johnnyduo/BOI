@@ -3,10 +3,11 @@
     "allow": [
       "Bash(ls:*)",
       "Bash(cat:*)",
-      "Bash(python3:*)",
+      "Bash(python3*)",
+      "Bash(python3 << *)",
       "Bash(npm:*)",
-      "Read(/path/to/your/project/**)",
-      "Write(/path/to/your/project/**)",
+      "Read(/Library/WebServer/Documents/*)",
+      "Write(/Library/WebServer/Documents/*)",
       "Bash(claude config:*)"
     ],
     "deny": [
