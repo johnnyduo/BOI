@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(python3:*)",
+      "Bash(npm:*)",
+      "Read(/path/to/your/project/**)",
+      "Write(/path/to/your/project/**)",
+      "Bash(claude config:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)"
+    ]
+  }
+}
