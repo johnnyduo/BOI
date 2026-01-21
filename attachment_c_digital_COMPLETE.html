@@ -635,16 +635,55 @@
     </ul>
 </div>
 
-<!-- ส่วนที่ 8: ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด -->
+<!-- ส่วนที่ 8: ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด (ภาพรวมทั้งโครงการ) -->
 <div class="section">
     <h2>ส่วนที่ 8: ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด</h2>
-    <p><em>(พิจารณากำหนดตามความเหมาะสมของโครงการ)</em></p>
+    <p><em>(พิจารณากำหนดตามความเหมาะสมของโครงการ - รวม R&D + Digital)</em></p>
 
+    <!-- ตารางรวมทั้งโครงการ -->
+    <h3 style="background-color: #d4edda; padding: 0.3cm;">8.1 สรุปภาพรวมการลงทุนและเงินสนับสนุนทั้งโครงการ</h3>
     <table>
         <thead>
             <tr>
-                <th style="width: 12%;">งวดงาน</th>
-                <th style="width: 40%;">ตัวชี้วัด</th>
+                <th style="width: 30%;">หมวดการลงทุน</th>
+                <th style="width: 17%;">งบประมาณลงทุน (ล้านบาท)</th>
+                <th style="width: 13%;">อัตราสนับสนุน</th>
+                <th style="width: 20%;">เงินสนับสนุนสูงสุด (ล้านบาท)</th>
+                <th style="width: 20%;">หน่วยรับรอง</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>R&D (เอกสารแนบ A)</strong></td>
+                <td style="text-align: center;">59.0</td>
+                <td style="text-align: center;">50%</td>
+                <td style="text-align: center;">29.5</td>
+                <td style="text-align: center;">สวทช.</td>
+            </tr>
+            <tr>
+                <td><strong>Digital Technology (เอกสารแนบ C)</strong></td>
+                <td style="text-align: center;">26.0</td>
+                <td style="text-align: center;">50%</td>
+                <td style="text-align: center;">13.0</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr class="total-row">
+                <td><strong>รวมทั้งโครงการ</strong></td>
+                <td style="text-align: center;"><strong>85.0</strong></td>
+                <td style="text-align: center;"><strong>50%</strong></td>
+                <td style="text-align: center;"><strong>42.5</strong></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ตารางแยกตามงวด -->
+    <h3 style="background-color: #cce5ff; padding: 0.3cm; margin-top: 1cm;">8.2 ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 10%;">งวดงาน</th>
+                <th style="width: 42%;">ตัวชี้วัด</th>
                 <th style="width: 16%;">ประมาณการลงทุน (ล้านบาท)</th>
                 <th style="width: 16%;">สัดส่วนการสนับสนุนรายงวด (ร้อยละ)</th>
                 <th style="width: 16%;">มูลค่าเงินสนับสนุนรายงวด (ล้านบาท)*</th>
@@ -653,88 +692,283 @@
         <tbody>
             <tr>
                 <td style="vertical-align: top;">
-                    <strong>งวดที่ 1</strong><br>
+                    <strong>งวดที่ 1</strong><br><br>
                     (ภายใน 6 เดือน นับจากวันที่ออกบัตรส่งเสริม)
                 </td>
                 <td>
                     <strong>1. ตัวชี้วัดความคืบหน้าของโครงการ:</strong><br>
                     <em>(ดูตัวอย่างจากคู่มือการกรอกขอเสนอโครงการ ข้อ 1)</em>
-                    <ul>
-                        <li>จัดซื้อและติดตั้ง On-premise Hardware 50% (Servers, Network Equipment)</li>
+
+                    <p style="margin: 0.3cm 0 0.2cm 0;"><strong><u>ส่วน R&D (สวทช.):</u></strong></p>
+                    <ul style="margin: 0;">
+                        <li>Physical AI Agent: Prototype แรกสำเร็จ (3 AI Agents working)</li>
+                        <li>Thai NLP: Model Training เบื้องต้น (F1 Score ≥ 80%)</li>
+                        <li>Multi-Agent: Framework พื้นฐาน (Message Passing ≥ 99%)</li>
+                        <li>จัดซื้ออุปกรณ์ R&D 50% (GPU Servers, Workstations)</li>
+                        <li>บุคลากรวิจัย: ฝึกอบรม ≥ 80%</li>
+                    </ul>
+
+                    <p style="margin: 0.3cm 0 0.2cm 0;"><strong><u>ส่วน Digital (depa):</u></strong></p>
+                    <ul style="margin: 0;">
+                        <li>จัดซื้อและติดตั้ง On-premise Hardware 50% (Servers, Network)</li>
                         <li>ตั้งค่า Cloud Infrastructure (AWS/GCP) พร้อมใช้งาน</li>
                         <li>ติดตั้ง Basic Security Systems (Firewall, IDS/IPS)</li>
-                        <li>Setup Development Environment สำหรับทีมพัฒนา</li>
-                        <li>Deploy Beta version บน Staging Environment</li>
+                        <li>Setup Development Environment</li>
+                        <li>Deploy Beta version บน Staging</li>
                     </ul>
-                    <strong>2. มีการลงทุนจริงตามขอบข่ายที่ได้รับอนุมัติ ในสัดส่วนไม่น้อยกว่าร้อยละ 50</strong> ของมูลค่าการลงทุน พร้อมหลักฐานการชำระเงิน เช่น ใบเสร็จรับเงิน หรือหลักฐานการโอนเงิน เป็นต้น<br><br>
-                    <strong>3. มีหนังสือรับรองผลการดำเนินการตามตัวชี้วัดจาก สวทช. หรือ depa</strong> (ตามขอบข่ายการดำเนินการ)
+
+                    <p style="margin-top: 0.3cm;"><strong>2. มีการลงทุนจริงตามขอบข่ายที่ได้รับอนุมัติ ในสัดส่วนไม่น้อยกว่าร้อยละ 50</strong> ของมูลค่าการลงทุน พร้อมหลักฐานการชำระเงิน เช่น ใบเสร็จรับเงิน หรือหลักฐานการโอนเงิน เป็นต้น</p>
+
+                    <p><strong>3. มีหนังสือรับรองผลการดำเนินการตามตัวชี้วัดจาก สวทช. หรือ depa</strong> (ตามขอบข่ายการดำเนินการ)</p>
                 </td>
-                <td style="text-align: center; vertical-align: middle;">13.0</td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <strong>42.5</strong><br><br>
+                    <small>(R&D: 29.5<br>Digital: 13.0)</small>
+                </td>
                 <td style="text-align: center; vertical-align: middle;">50%</td>
-                <td style="text-align: center; vertical-align: middle;">6.5</td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <strong>21.25</strong><br><br>
+                    <small>(R&D: 14.75<br>Digital: 6.5)</small>
+                </td>
             </tr>
             <tr>
                 <td style="vertical-align: top;">
-                    <strong>งวดที่ 2</strong><br>
+                    <strong>งวดที่ 2</strong><br><br>
                     (ภายใน 12 เดือน นับจากวันที่ออกบัตรส่งเสริม)
                 </td>
                 <td>
                     <strong>1. ตัวชี้วัดผลการดำเนินการตามเป้าหมาย:</strong>
-                    <ul>
-                        <li>จัดซื้อและติดตั้ง Hardware ครบถ้วน 100%</li>
-                        <li>Production Deployment สมบูรณ์ รองรับ 50,000 Concurrent Users</li>
-                        <li>System Uptime ≥ 99.5% (วัดจาก Monitoring tools)</li>
-                        <li>API Response Time < 200ms (p95)</li>
-                        <li>Throughput ≥ 500 TPS</li>
-                        <li>ผ่าน Security Audit จากหน่วยงานรับรอง</li>
-                        <li>ได้รับใบรับรองจาก depa (ตามขอบข่ายการดำเนินการ)</li>
+
+                    <p style="margin: 0.3cm 0 0.2cm 0;"><strong><u>ส่วน R&D (สวทช.):</u></strong></p>
+                    <ul style="margin: 0;">
+                        <li>Production System: ครบ 5 AI Agents, Uptime ≥ 99.5%</li>
+                        <li>Thai NLP: F1 Score ≥ 85%, False Positive ≤ 10%</li>
+                        <li>Performance: Response Time < 200ms, Throughput ≥ 500 TPS</li>
+                        <li>ยื่นสิทธิบัตร ≥ 2 ฉบับ</li>
+                        <li>ตีพิมพ์บทความวิชาการ ≥ 3 ฉบับ</li>
+                        <li>UAT กับผู้ใช้จริง ≥ 50 คน</li>
+                        <li>Thai Scam Dataset ≥ 10,000 ตัวอย่าง</li>
                     </ul>
-                    <strong>2. มีการลงทุนจริงครบถ้วน</strong>ตามขอบข่ายที่ได้รับอนุมัติ พร้อมหลักฐานการชำระเงิน เช่น ใบเสร็จรับเงิน หรือหลักฐานการโอนเงิน เป็นต้น<br><br>
-                    <strong>3. มีหนังสือรับรองผลการดำเนินการตามตัวชี้วัดจาก สวทช. หรือ depa</strong> (ตามขอบข่ายการดำเนินการ)
+
+                    <p style="margin: 0.3cm 0 0.2cm 0;"><strong><u>ส่วน Digital (depa):</u></strong></p>
+                    <ul style="margin: 0;">
+                        <li>จัดซื้อและติดตั้ง Hardware ครบถ้วน 100%</li>
+                        <li>Production Deployment รองรับ 50,000 Concurrent Users</li>
+                        <li>System Uptime ≥ 99.5%</li>
+                        <li>API Response Time < 200ms (p95)</li>
+                        <li>ผ่าน Security Audit จากหน่วยงานรับรอง</li>
+                        <li>Go Live บริการจริง</li>
+                    </ul>
+
+                    <p style="margin-top: 0.3cm;"><strong>2. มีการลงทุนจริงครบถ้วน</strong> ตามขอบข่ายที่ได้รับอนุมัติ พร้อมหลักฐานการชำระเงิน เช่น ใบเสร็จรับเงิน หรือหลักฐานการโอนเงิน เป็นต้น</p>
+
+                    <p><strong>3. มีหนังสือรับรองผลการดำเนินการตามตัวชี้วัดจาก สวทช. หรือ depa</strong> (ตามขอบข่ายการดำเนินการ)</p>
                 </td>
-                <td style="text-align: center; vertical-align: middle;">13.0</td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <strong>42.5</strong><br><br>
+                    <small>(R&D: 29.5<br>Digital: 13.0)</small>
+                </td>
                 <td style="text-align: center; vertical-align: middle;">50%</td>
-                <td style="text-align: center; vertical-align: middle;">6.5</td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <strong>21.25</strong><br><br>
+                    <small>(R&D: 14.75<br>Digital: 6.5)</small>
+                </td>
             </tr>
             <tr class="total-row">
                 <td colspan="2" style="text-align: right;"><strong>รวมทั้งสิ้น</strong></td>
-                <td style="text-align: center;"><strong>26.0</strong></td>
+                <td style="text-align: center;"><strong>85.0</strong></td>
                 <td style="text-align: center;"><strong>100%</strong></td>
-                <td style="text-align: center;"><strong>13.0</strong></td>
+                <td style="text-align: center;"><strong>42.5</strong></td>
             </tr>
         </tbody>
     </table>
 
     <p style="margin-top: 0.5cm;"><strong>* หมายเหตุ:</strong> จะได้รับอนุมัติเบิกจ่ายเงินสนับสนุนไม่เกินมูลค่าเงินที่ชำระจริง</p>
 
-    <h3 style="margin-top: 1cm;">สรุปการเบิกจ่ายเงินสนับสนุนเทคโนโลยีดิจิทัล</h3>
+    <!-- ตารางสรุปแยกหมวด -->
+    <h3 style="background-color: #fff3cd; padding: 0.3cm; margin-top: 1cm;">8.3 สรุปการเบิกจ่ายเงินสนับสนุนรายงวด (แยกตามหมวด)</h3>
     <table>
         <thead>
             <tr>
-                <th>รายการ</th>
-                <th>มูลค่า (ล้านบาท)</th>
+                <th rowspan="2" style="width: 25%;">รายการ</th>
+                <th colspan="2" style="text-align: center;">R&D (สวทช.)</th>
+                <th colspan="2" style="text-align: center;">Digital (depa)</th>
+                <th colspan="2" style="text-align: center;">รวมทั้งหมด</th>
+            </tr>
+            <tr>
+                <th style="width: 12%;">ลงทุน</th>
+                <th style="width: 12%;">สนับสนุน</th>
+                <th style="width: 12%;">ลงทุน</th>
+                <th style="width: 12%;">สนับสนุน</th>
+                <th style="width: 12%;">ลงทุน</th>
+                <th style="width: 12%;">สนับสนุน</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>งบประมาณเทคโนโลยีดิจิทัลทั้งหมด</td>
+                <td>งบประมาณทั้งหมด</td>
+                <td style="text-align: center;">59.0</td>
+                <td style="text-align: center;">29.5</td>
                 <td style="text-align: center;">26.0</td>
-            </tr>
-            <tr>
-                <td>อัตราการสนับสนุน</td>
-                <td style="text-align: center;">50%</td>
-            </tr>
-            <tr>
-                <td>เงินสนับสนุนสูงสุดที่จะได้รับ</td>
                 <td style="text-align: center;">13.0</td>
+                <td style="text-align: center;"><strong>85.0</strong></td>
+                <td style="text-align: center;"><strong>42.5</strong></td>
             </tr>
             <tr>
                 <td>งวดที่ 1 (50%)</td>
+                <td style="text-align: center;">29.5</td>
+                <td style="text-align: center;">14.75</td>
+                <td style="text-align: center;">13.0</td>
                 <td style="text-align: center;">6.5</td>
+                <td style="text-align: center;"><strong>42.5</strong></td>
+                <td style="text-align: center;"><strong>21.25</strong></td>
             </tr>
             <tr>
                 <td>งวดที่ 2 (50%)</td>
+                <td style="text-align: center;">29.5</td>
+                <td style="text-align: center;">14.75</td>
+                <td style="text-align: center;">13.0</td>
                 <td style="text-align: center;">6.5</td>
+                <td style="text-align: center;"><strong>42.5</strong></td>
+                <td style="text-align: center;"><strong>21.25</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><em>หน่วย: ล้านบาท</em></p>
+
+    <!-- รายการ Hardware ที่ได้รับการสนับสนุน -->
+    <h3 style="background-color: #f8d7da; padding: 0.3cm; margin-top: 1cm;">8.4 รายการ Hardware และอุปกรณ์ที่ได้รับการสนับสนุน</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 5%;">#</th>
+                <th style="width: 35%;">รายการ</th>
+                <th style="width: 15%;">หมวด</th>
+                <th style="width: 15%;">มูลค่าลงทุน (บาท)</th>
+                <th style="width: 15%;">สนับสนุน 50% (บาท)</th>
+                <th style="width: 15%;">หน่วยรับรอง</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="6" style="background-color: #e8f5e9;"><strong>อุปกรณ์ R&D (เอกสารแนบ A)</strong></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">1</td>
+                <td>GPU Server (NVIDIA A100 80GB) x 4 เครื่อง</td>
+                <td style="text-align: center;">R&D</td>
+                <td style="text-align: right;">6,000,000</td>
+                <td style="text-align: right;">3,000,000</td>
+                <td style="text-align: center;">สวทช.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2</td>
+                <td>Development Workstations x 15 เครื่อง</td>
+                <td style="text-align: center;">R&D</td>
+                <td style="text-align: right;">1,500,000</td>
+                <td style="text-align: right;">750,000</td>
+                <td style="text-align: center;">สวทช.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td>Physical AI Prototyping Equipment</td>
+                <td style="text-align: center;">R&D</td>
+                <td style="text-align: right;">800,000</td>
+                <td style="text-align: right;">400,000</td>
+                <td style="text-align: center;">สวทช.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td>Testing Devices (Smartphones, Tablets, IoT) x 50</td>
+                <td style="text-align: center;">R&D</td>
+                <td style="text-align: right;">700,000</td>
+                <td style="text-align: right;">350,000</td>
+                <td style="text-align: center;">สวทช.</td>
+            </tr>
+            <tr style="background-color: #f5f5f5;">
+                <td colspan="3" style="text-align: right;"><strong>รวม Hardware R&D</strong></td>
+                <td style="text-align: right;"><strong>9,000,000</strong></td>
+                <td style="text-align: right;"><strong>4,500,000</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="background-color: #e3f2fd;"><strong>อุปกรณ์ Digital (เอกสารแนบ C)</strong></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td>Application Server (Dual Xeon, 256GB RAM) x 4</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">2,000,000</td>
+                <td style="text-align: right;">1,000,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">6</td>
+                <td>Database Server (512GB RAM, NVMe) x 2</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">1,600,000</td>
+                <td style="text-align: right;">800,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">7</td>
+                <td>Kubernetes Nodes (Master 3 + Worker 10)</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">1,950,000</td>
+                <td style="text-align: right;">975,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">8</td>
+                <td>Next-Gen Firewall (Palo Alto) x 2</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">1,200,000</td>
+                <td style="text-align: right;">600,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">9</td>
+                <td>Load Balancer (F5) x 2</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">800,000</td>
+                <td style="text-align: right;">400,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">10</td>
+                <td>Enterprise Storage (SAN, 100TB)</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">1,500,000</td>
+                <td style="text-align: right;">750,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">11</td>
+                <td>Network Switches (Core, 10Gb) x 4</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">600,000</td>
+                <td style="text-align: right;">300,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">12</td>
+                <td>UPS & Power Management x 2</td>
+                <td style="text-align: center;">Digital</td>
+                <td style="text-align: right;">600,000</td>
+                <td style="text-align: right;">300,000</td>
+                <td style="text-align: center;">depa</td>
+            </tr>
+            <tr style="background-color: #f5f5f5;">
+                <td colspan="3" style="text-align: right;"><strong>รวม Hardware Digital</strong></td>
+                <td style="text-align: right;"><strong>10,250,000</strong></td>
+                <td style="text-align: right;"><strong>5,125,000</strong></td>
+                <td></td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3" style="text-align: right;"><strong>รวม Hardware ทั้งหมด</strong></td>
+                <td style="text-align: right;"><strong>19,250,000</strong></td>
+                <td style="text-align: right;"><strong>9,625,000</strong></td>
+                <td></td>
             </tr>
         </tbody>
     </table>
