@@ -1123,37 +1123,246 @@ function createAttachmentC(body) {
 
   addPageBreak(body);
 
-  // หน้า 4 - ตัวชี้วัด
-  addPageHeader(body, 'เอกสารแนบ C หน้า 4/4');
+  // หน้า 4 - ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด (ภาพรวมทั้งโครงการ)
+  addPageHeader(body, 'เอกสารแนบ C หน้า 4/6');
 
   const digital8 = body.appendParagraph('8. ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด');
   setSectionHeaderStyle(digital8);
 
-  const digitalKpiTable = body.appendTable([
-    ['งวดงาน', 'ตัวชี้วัด', 'ประมาณการลงทุน (ล้านบาท)', 'สัดส่วน (%)', 'มูลค่าสนับสนุน (ล้านบาท)'],
-    ['งวดที่ 1\n(ภายใน 6 เดือน)', '1. ติดตั้ง On-premise Hardware 50%\n2. ตั้งค่า Cloud Infrastructure\n3. ติดตั้ง Basic Security\n4. Deploy Beta version', '13.0', '50', '6.5'],
-    ['งวดที่ 2\n(ภายใน 12 เดือน)', '1. จัดซื้อ Hardware ครบ\n2. Production deployment\n3. Full Security implementation\n4. ผ่าน Security Audit จาก depa\n5. Go Live บริการจริง', '13.0', '50', '6.5'],
-    ['รวม', '', '26.0', '', '13.0']
-  ]);
-  setTableStyle(digitalKpiTable);
+  const digital8Note = body.appendParagraph('(พิจารณากำหนดตามความเหมาะสมของโครงการ - รวม R&D + Digital)');
+  digital8Note.setFontSize(10);
+  digital8Note.setItalic(true);
+  digital8Note.setFontFamily('Sarabun');
 
   body.appendParagraph('');
 
-  // Performance Targets
-  const perfHeader = body.appendParagraph('เป้าหมาย Performance และ Scalability:');
-  setBodyStyle(perfHeader);
-  perfHeader.setBold(true);
+  // 8.1 สรุปภาพรวมทั้งโครงการ
+  const digital81 = body.appendParagraph('8.1 สรุปภาพรวมการลงทุนและเงินสนับสนุนทั้งโครงการ');
+  setSubSectionStyle(digital81);
 
-  const perfTable = body.appendTable([
-    ['Metric', 'เป้าหมาย', 'วิธีการวัด'],
-    ['System Uptime', '≥ 99.5%', 'Monitoring tools (24/7)'],
-    ['API Response Time', '< 200ms (p95)', 'APM (Datadog/New Relic)'],
-    ['Concurrent Users', '50,000 users', 'Load testing (JMeter/Gatling)'],
-    ['Throughput', '≥ 500 TPS', 'Performance monitoring'],
-    ['Security Scans', 'Weekly', 'Vulnerability scanner'],
-    ['Backup Frequency', 'Daily Full, Hourly Incremental', 'Backup monitoring']
+  const overviewTable = body.appendTable([
+    ['หมวดการลงทุน', 'งบประมาณลงทุน (ล้านบาท)', 'อัตราสนับสนุน', 'เงินสนับสนุนสูงสุด (ล้านบาท)', 'หน่วยรับรอง'],
+    ['R&D (เอกสารแนบ A)', '59.0', '50%', '29.5', 'สวทช.'],
+    ['Digital Technology (เอกสารแนบ C)', '26.0', '50%', '13.0', 'depa'],
+    ['รวมทั้งโครงการ', '85.0', '50%', '42.5', '']
   ]);
-  setTableStyle(perfTable);
+  setTableStyle(overviewTable);
+
+  body.appendParagraph('');
+
+  // 8.2 ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด
+  const digital82 = body.appendParagraph('8.2 ตัวชี้วัดและมูลค่าเงินสนับสนุนรายงวด');
+  setSubSectionStyle(digital82);
+
+  const kpiSummaryTable = body.appendTable([
+    ['งวดงาน', 'ประมาณการลงทุน (ล้านบาท)', 'สัดส่วน (%)', 'เงินสนับสนุน (ล้านบาท)'],
+    ['งวดที่ 1 (6 เดือน)', '42.5 (R&D: 29.5 + Digital: 13.0)', '50%', '21.25 (R&D: 14.75 + Digital: 6.5)'],
+    ['งวดที่ 2 (12 เดือน)', '42.5 (R&D: 29.5 + Digital: 13.0)', '50%', '21.25 (R&D: 14.75 + Digital: 6.5)'],
+    ['รวมทั้งสิ้น', '85.0', '100%', '42.5']
+  ]);
+  setTableStyle(kpiSummaryTable);
+
+  addPageBreak(body);
+
+  // หน้า 5 - รายละเอียดตัวชี้วัดรายงวด
+  addPageHeader(body, 'เอกสารแนบ C หน้า 5/6');
+
+  // งวดที่ 1
+  const phase1Header = body.appendParagraph('งวดที่ 1: ตัวชี้วัดความคืบหน้าของโครงการ (ภายใน 6 เดือน นับจากวันที่ออกบัตรส่งเสริม)');
+  setSubSectionStyle(phase1Header);
+
+  const phase1RD = body.appendParagraph('ส่วน R&D (สวทช.):');
+  setBodyStyle(phase1RD);
+  phase1RD.setBold(true);
+
+  const phase1RDItems = [
+    '- Physical AI Agent: Prototype แรกสำเร็จ (3 AI Agents working)',
+    '- Thai NLP: Model Training เบื้องต้น (F1 Score ≥ 80%)',
+    '- Multi-Agent: Framework พื้นฐาน (Message Passing ≥ 99%)',
+    '- จัดซื้ออุปกรณ์ R&D 50% (GPU Servers, Workstations)',
+    '- บุคลากรวิจัย: ฝึกอบรม ≥ 80%'
+  ];
+  phase1RDItems.forEach(function(item) {
+    const p = body.appendParagraph(item);
+    setBodyStyle(p);
+  });
+
+  body.appendParagraph('');
+
+  const phase1Digital = body.appendParagraph('ส่วน Digital (depa):');
+  setBodyStyle(phase1Digital);
+  phase1Digital.setBold(true);
+
+  const phase1DigitalItems = [
+    '- จัดซื้อและติดตั้ง On-premise Hardware 50% (Servers, Network)',
+    '- ตั้งค่า Cloud Infrastructure (AWS/GCP) พร้อมใช้งาน',
+    '- ติดตั้ง Basic Security Systems (Firewall, IDS/IPS)',
+    '- Setup Development Environment',
+    '- Deploy Beta version บน Staging'
+  ];
+  phase1DigitalItems.forEach(function(item) {
+    const p = body.appendParagraph(item);
+    setBodyStyle(p);
+  });
+
+  body.appendParagraph('');
+
+  const phase1Conditions = body.appendParagraph('เงื่อนไขการเบิกจ่าย:');
+  setBodyStyle(phase1Conditions);
+  phase1Conditions.setBold(true);
+
+  const phase1ConditionItems = [
+    '1. มีการลงทุนจริงตามขอบข่ายที่ได้รับอนุมัติ ในสัดส่วนไม่น้อยกว่าร้อยละ 50 ของมูลค่าการลงทุน พร้อมหลักฐานการชำระเงิน',
+    '2. มีหนังสือรับรองผลการดำเนินการตามตัวชี้วัดจาก สวทช. หรือ depa (ตามขอบข่ายการดำเนินการ)'
+  ];
+  phase1ConditionItems.forEach(function(item) {
+    const p = body.appendParagraph(item);
+    setBodyStyle(p);
+  });
+
+  body.appendParagraph('');
+
+  // งวดที่ 2
+  const phase2Header = body.appendParagraph('งวดที่ 2: ตัวชี้วัดผลการดำเนินการตามเป้าหมาย (ภายใน 12 เดือน นับจากวันที่ออกบัตรส่งเสริม)');
+  setSubSectionStyle(phase2Header);
+
+  const phase2RD = body.appendParagraph('ส่วน R&D (สวทช.):');
+  setBodyStyle(phase2RD);
+  phase2RD.setBold(true);
+
+  const phase2RDItems = [
+    '- Production System: ครบ 5 AI Agents, Uptime ≥ 99.5%',
+    '- Thai NLP: F1 Score ≥ 85%, False Positive ≤ 10%',
+    '- Performance: Response Time < 200ms, Throughput ≥ 500 TPS',
+    '- ยื่นสิทธิบัตร ≥ 2 ฉบับ',
+    '- ตีพิมพ์บทความวิชาการ ≥ 3 ฉบับ',
+    '- UAT กับผู้ใช้จริง ≥ 50 คน',
+    '- Thai Scam Dataset ≥ 10,000 ตัวอย่าง'
+  ];
+  phase2RDItems.forEach(function(item) {
+    const p = body.appendParagraph(item);
+    setBodyStyle(p);
+  });
+
+  body.appendParagraph('');
+
+  const phase2Digital = body.appendParagraph('ส่วน Digital (depa):');
+  setBodyStyle(phase2Digital);
+  phase2Digital.setBold(true);
+
+  const phase2DigitalItems = [
+    '- จัดซื้อและติดตั้ง Hardware ครบถ้วน 100%',
+    '- Production Deployment รองรับ 50,000 Concurrent Users',
+    '- System Uptime ≥ 99.5%',
+    '- API Response Time < 200ms (p95)',
+    '- ผ่าน Security Audit จากหน่วยงานรับรอง',
+    '- Go Live บริการจริง'
+  ];
+  phase2DigitalItems.forEach(function(item) {
+    const p = body.appendParagraph(item);
+    setBodyStyle(p);
+  });
+
+  body.appendParagraph('');
+
+  const phase2Conditions = body.appendParagraph('เงื่อนไขการเบิกจ่าย:');
+  setBodyStyle(phase2Conditions);
+  phase2Conditions.setBold(true);
+
+  const phase2ConditionItems = [
+    '1. มีการลงทุนจริงครบถ้วนตามขอบข่ายที่ได้รับอนุมัติ พร้อมหลักฐานการชำระเงิน',
+    '2. มีหนังสือรับรองผลการดำเนินการตามตัวชี้วัดจาก สวทช. หรือ depa (ตามขอบข่ายการดำเนินการ)'
+  ];
+  phase2ConditionItems.forEach(function(item) {
+    const p = body.appendParagraph(item);
+    setBodyStyle(p);
+  });
+
+  addPageBreak(body);
+
+  // หน้า 6 - สรุปและ Hardware list
+  addPageHeader(body, 'เอกสารแนบ C หน้า 6/6');
+
+  // 8.3 สรุปการเบิกจ่ายแยกหมวด
+  const digital83 = body.appendParagraph('8.3 สรุปการเบิกจ่ายเงินสนับสนุนรายงวด (แยกตามหมวด)');
+  setSubSectionStyle(digital83);
+
+  const summaryByCategory = body.appendTable([
+    ['รายการ', 'R&D ลงทุน', 'R&D สนับสนุน', 'Digital ลงทุน', 'Digital สนับสนุน', 'รวมลงทุน', 'รวมสนับสนุน'],
+    ['งบประมาณทั้งหมด', '59.0', '29.5', '26.0', '13.0', '85.0', '42.5'],
+    ['งวดที่ 1 (50%)', '29.5', '14.75', '13.0', '6.5', '42.5', '21.25'],
+    ['งวดที่ 2 (50%)', '29.5', '14.75', '13.0', '6.5', '42.5', '21.25']
+  ]);
+  setTableStyle(summaryByCategory);
+
+  const unitNote = body.appendParagraph('หน่วย: ล้านบาท');
+  unitNote.setFontSize(10);
+  unitNote.setItalic(true);
+  unitNote.setFontFamily('Sarabun');
+
+  body.appendParagraph('');
+
+  // 8.4 Hardware List
+  const digital84 = body.appendParagraph('8.4 รายการ Hardware และอุปกรณ์ที่ได้รับการสนับสนุน');
+  setSubSectionStyle(digital84);
+
+  // R&D Hardware
+  const rdHwHeader = body.appendParagraph('อุปกรณ์ R&D (เอกสารแนบ A) - รับรองโดย สวทช.');
+  setBodyStyle(rdHwHeader);
+  rdHwHeader.setBold(true);
+
+  const rdHardwareTable = body.appendTable([
+    ['#', 'รายการ', 'มูลค่าลงทุน (บาท)', 'สนับสนุน 50% (บาท)'],
+    ['1', 'GPU Server (NVIDIA A100 80GB) x 4 เครื่อง', '6,000,000', '3,000,000'],
+    ['2', 'Development Workstations x 15 เครื่อง', '1,500,000', '750,000'],
+    ['3', 'Physical AI Prototyping Equipment', '800,000', '400,000'],
+    ['4', 'Testing Devices (Smartphones, Tablets, IoT) x 50', '700,000', '350,000'],
+    ['รวม Hardware R&D', '', '9,000,000', '4,500,000']
+  ]);
+  setTableStyle(rdHardwareTable);
+
+  body.appendParagraph('');
+
+  // Digital Hardware
+  const digitalHwHeader = body.appendParagraph('อุปกรณ์ Digital (เอกสารแนบ C) - รับรองโดย depa');
+  setBodyStyle(digitalHwHeader);
+  digitalHwHeader.setBold(true);
+
+  const digitalHardwareTable = body.appendTable([
+    ['#', 'รายการ', 'มูลค่าลงทุน (บาท)', 'สนับสนุน 50% (บาท)'],
+    ['5', 'Application Server (Dual Xeon, 256GB RAM) x 4', '2,000,000', '1,000,000'],
+    ['6', 'Database Server (512GB RAM, NVMe) x 2', '1,600,000', '800,000'],
+    ['7', 'Kubernetes Nodes (Master 3 + Worker 10)', '1,950,000', '975,000'],
+    ['8', 'Next-Gen Firewall (Palo Alto) x 2', '1,200,000', '600,000'],
+    ['9', 'Load Balancer (F5) x 2', '800,000', '400,000'],
+    ['10', 'Enterprise Storage (SAN, 100TB)', '1,500,000', '750,000'],
+    ['11', 'Network Switches (Core, 10Gb) x 4', '600,000', '300,000'],
+    ['12', 'UPS & Power Management x 2', '600,000', '300,000'],
+    ['รวม Hardware Digital', '', '10,250,000', '5,125,000']
+  ]);
+  setTableStyle(digitalHardwareTable);
+
+  body.appendParagraph('');
+
+  // สรุป Hardware ทั้งหมด
+  const totalHwHeader = body.appendParagraph('สรุป Hardware ทั้งหมด');
+  setBodyStyle(totalHwHeader);
+  totalHwHeader.setBold(true);
+
+  const totalHardwareTable = body.appendTable([
+    ['หมวด', 'มูลค่าลงทุน (บาท)', 'สนับสนุน 50% (บาท)'],
+    ['R&D (สวทช.)', '9,000,000', '4,500,000'],
+    ['Digital (depa)', '10,250,000', '5,125,000'],
+    ['รวม Hardware ทั้งหมด', '19,250,000', '9,625,000']
+  ]);
+  setTableStyle(totalHardwareTable);
+
+  body.appendParagraph('');
+
+  const disclaimerNote = body.appendParagraph('* หมายเหตุ: จะได้รับอนุมัติเบิกจ่ายเงินสนับสนุนไม่เกินมูลค่าเงินที่ชำระจริง');
+  disclaimerNote.setFontSize(10);
+  disclaimerNote.setItalic(true);
+  disclaimerNote.setFontFamily('Sarabun');
 
   // ลายเซ็น
   body.appendParagraph('');
