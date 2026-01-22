@@ -8,7 +8,10 @@
       "Bash(npm:*)",
       "Read(/Library/WebServer/Documents/*)",
       "Write(/Library/WebServer/Documents/*)",
-      "Bash(claude config:*)"
+      "Bash(claude config:*)",
+      "Bash(wc:*)",
+      "Bash(sort:*)",
+      "Bash(find:*)"
     ],
     "deny": [
       "Bash(rm -rf:*)",
