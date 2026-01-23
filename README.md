@@ -45,11 +45,13 @@ boi/
 │   ├── attachment_c_digital_COMPLETE.html # Attachment C: Digital Technology
 │   ├── attachment_d_product_details.html  # Attachment D: Product Details
 │   ├── ATTACHMENT_A_RD_COMPLETE.md       # R&D markdown reference
-│   └── ATTACHMENT_C_DIGITAL_COMPLETE.md  # Digital markdown reference
+│   ├── ATTACHMENT_C_DIGITAL_COMPLETE.md  # Digital markdown reference
+│   └── TECHNICAL_WORKFLOW.md             # Technical workflow with Mermaid diagrams
 │
 ├── 03_Scripts/                 # Automation tools (Google Apps Script)
 │   ├── BOI_Form_Generator.gs             # Form data generator
-│   └── BOI_Presentation_Generator.gs     # Presentation generator
+│   ├── BOI_Presentation_Generator.gs     # Presentation generator
+│   └── BOI_Workflow_Slides.gs            # Workflow visualization slides
 │
 ├── 04_Reference/               # BOI regulations and checklists
 │   ├── aor1_2568_692903a229c0d.pdf       # BOI Ordinance 1/2568
@@ -110,6 +112,26 @@ Submit complete package through BOI e-Investment system.
 
 ---
 
+## Technical Workflow Documentation
+
+See `02_Attachments/TECHNICAL_WORKFLOW.md` for comprehensive workflow diagrams including:
+
+- BOI Document Submission Flow
+- Required Documents Checklist (per BOI requirements)
+- Project Timeline (12-month Gantt chart)
+- Multi-Agent AI Architecture
+- Budget Allocation Breakdown
+- R&D Activities Detail
+- Digital Transformation (Before/After)
+- KPI Verification Flow
+- Physical AI Agent Architecture
+- BOI Compliance Matrix
+- Fund Disbursement Flow
+
+All diagrams are in Mermaid format for easy rendering in GitHub, VS Code, or any Mermaid-compatible viewer.
+
+---
+
 ## Google Apps Scripts Usage
 
 Located in `03_Scripts/`:
@@ -117,9 +139,15 @@ Located in `03_Scripts/`:
 | Script | Purpose |
 |--------|---------|
 | `BOI_Form_Generator.gs` | Auto-generates BOI form data in Google Sheets |
-| `BOI_Presentation_Generator.gs` | Creates 10-slide BOI presentation in Google Slides |
+| `BOI_Presentation_Generator.gs` | Creates 10-slide BOI project presentation |
+| `BOI_Workflow_Slides.gs` | Generates 13-slide technical workflow visualization |
 
-**To use:** Copy script content to Google Apps Script editor and run.
+**To use:**
+1. Open Google Slides and create a new presentation
+2. Go to Extensions > Apps Script
+3. Paste the script content
+4. Run the main function (e.g., `createBOIWorkflowPresentation()`)
+5. Grant permissions when prompted
 
 ---
 

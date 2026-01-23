@@ -11,7 +11,11 @@
       "Bash(claude config:*)",
       "Bash(wc:*)",
       "Bash(sort:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --print-to-pdf=\"/Library/WebServer/Documents/boi/02_Attachments/ASLAN_PHYSICAL_AI_ARCHITECTURE.pdf\" --print-to-pdf-no-header --no-margins \"file:///Library/WebServer/Documents/boi/02_Attachments/ASLAN_PHYSICAL_AI_ARCHITECTURE.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --print-to-pdf=\"/Library/WebServer/Documents/boi/02_Attachments/ASLAN_CAD_ENGINEERING_SPEC.pdf\" --print-to-pdf-no-header --no-margins \"file:///Library/WebServer/Documents/boi/02_Attachments/ASLAN_CAD_ENGINEERING_SPEC.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --print-to-pdf=\"/Library/WebServer/Documents/boi/02_Attachments/ASLAN_CAD_ENGINEERING_SPEC.pdf\" --print-to-pdf-no-header --run-all-compositor-stages-before-draw --virtual-time-budget=10000 \"file:///Library/WebServer/Documents/boi/02_Attachments/ASLAN_CAD_ENGINEERING_SPEC.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --print-to-pdf=\"/Library/WebServer/Documents/boi/02_Attachments/ASLAN_PHYSICAL_AI_ARCHITECTURE.pdf\" --print-to-pdf-no-header --run-all-compositor-stages-before-draw --virtual-time-budget=10000 \"file:///Library/WebServer/Documents/boi/02_Attachments/ASLAN_PHYSICAL_AI_ARCHITECTURE.html\")"
     ],
     "deny": [
       "Bash(rm -rf:*)",
